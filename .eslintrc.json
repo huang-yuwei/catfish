@@ -4,6 +4,32 @@
     "@remix-run/eslint-config/node",
     "prettier"
   ],
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "ignore",
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ],
+        "pathGroups": [
+          { "pattern": "react", "group": "external", "position": "before" },
+          { "pattern": "~/**", "group": "internal" }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  },
   "settings": {
     "react": {
       "version": "detect"
