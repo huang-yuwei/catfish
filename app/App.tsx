@@ -1,4 +1,3 @@
-import type { MetaFunction } from '@remix-run/node';
 import {
   Meta,
   Links,
@@ -8,13 +7,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
-export const meta: MetaFunction = () => ({
-  charset: 'utf-8',
-  title: 'Catfish',
-  viewport: 'width=device-width,initial-scale=1',
-});
-
-const App = () => {
+export const App = () => {
   return (
     <html lang="ja">
       <head>
@@ -31,5 +24,3 @@ const App = () => {
     </html>
   );
 };
-
-export default App;
