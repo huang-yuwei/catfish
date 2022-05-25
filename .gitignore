@@ -5,6 +5,7 @@
 .env
 .vercel
 .output
+.vscode
 
 /build/
 /public/build
