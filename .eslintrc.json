@@ -4,6 +4,7 @@
     "@remix-run/eslint-config/node",
     "prettier"
   ],
+  "plugins": ["strict-dependencies"],
   "rules": {
     "import/order": [
       "error",
@@ -28,6 +29,21 @@
           "caseInsensitive": true
         }
       }
+    ],
+    "strict-dependencies/strict-dependencies": [
+      "error",
+      [
+        {
+          "module": "firebase",
+          "allowReferenceFrom": ["app/services/api"],
+          "allowSameModule": false
+        },
+        {
+          "module": "app/services/api",
+          "allowReferenceFrom": ["app/services"],
+          "allowSameModule": true
+        }
+      ]
     ]
   },
   "settings": {

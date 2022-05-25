@@ -1,6 +1,5 @@
 import type { MetaFunction } from '@remix-run/node';
-import { authToServer } from './services/api/auth/auth';
-import { initApiConnection } from './services/auth';
+import { authToServer, initApiConnection } from './services/auth';
 
 // Init API connection with server
 initApiConnection();
