@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Box = styled('div')`
-  font-family: system-ui, sans-serif;
-  line-height: 1.4;
+export const Layout = styled.div`
+  width: 100vw;
+  height: 100vh;
 `;
