@@ -12,15 +12,19 @@
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.34",
+    "@pixi/canvas-extract": "^6.3.2",
     "@remix-run/node": "^1.4.3",
     "@remix-run/react": "^1.4.3",
     "@remix-run/vercel": "^1.4.3",
+    "deck.gl": "^8.7.10",
     "firebase": "^9.8.1",
+    "pixi.js": "^6.3.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@danmarshall/deckgl-typings": "^4.9.24",
     "@remix-run/dev": "^1.4.3",
     "@remix-run/eslint-config": "^1.4.3",
     "@remix-run/serve": "^1.4.3",
